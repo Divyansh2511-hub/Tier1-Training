@@ -1,0 +1,18 @@
+#include <stdio.h> 
+int main()
+{
+    int a, sum;
+    printf("Enter a number:\n");
+    scanf("%d",&a);
+    while(a/10!=0)
+    {
+        sum=0;
+        while(a!=0)
+        {
+            sum=sum+a%10;
+            a=a/10;
+        }
+        a=sum;
+    }
+    printf("The digital root is:%d", sum);
+}
